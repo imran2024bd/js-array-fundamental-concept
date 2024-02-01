@@ -49,14 +49,29 @@ const numbers = [2, 4, 6 , 7, 9];
 // console.log(rev_numbers);
 
 // reverse Using  for Loop
-const reversed_numbers = [];
-for (let i = 0; i < numbers.length; i++) {
-    let num = numbers[i];
-    reversed_numbers.unshift(num);
-    //  console.log(reversed_numbers);   
-}
-console.log(reversed_numbers);
+// const reversed_numbers = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     let num = numbers[i];
+//     reversed_numbers.unshift(num);
+//     //  console.log(reversed_numbers);   
+// }
+// console.log(reversed_numbers);
 
+
+//from  reverse side
+// first find out highest index
+// for (let i = numbers.length -1; i>=0; i--) {
+//     console.log(numbers[i]);
+// }
+
+// output result in an array 
+let reve_num = [];
+for (let i = numbers.length -1; i>=0; i--) {
+    let num = numbers[i];
+    reve_num.push(num);
+    // console.log(reve_num);
+}
+console.log(reve_num);
 // const numbers = [2, 4, 6 , 7, 9];
 
 // console.log(numbers);
