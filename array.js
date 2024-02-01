@@ -34,7 +34,7 @@ const friends = ["Emil", "Tobias", "Linus"];
 
 // *******************************19.5_2 Reversing An Array With/Without Reverse Method
 // Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
-const numbers = [2, 4, 6 , 7, 9];
+// const numbers = [2, 4, 6 , 7, 9];
 // console.log(numbers);
 // numbers.reverse();
 // console.log(numbers);
@@ -65,13 +65,32 @@ const numbers = [2, 4, 6 , 7, 9];
 // }
 
 // output result in an array 
-let reve_num = [];
-for (let i = numbers.length -1; i>=0; i--) {
-    let num = numbers[i];
-    reve_num.push(num);
-    // console.log(reve_num);
-}
-console.log(reve_num);
+// let reve_num = [];
+// for (let i = numbers.length -1; i>=0; i--) {
+//     let num = numbers[i];
+//     reve_num.push(num);
+//     // console.log(reve_num);
+// }
+// console.log(reve_num);
+
+// ***************************19.5_3 Sort An Array Problems And Solution
+// The sort() method sorts an array alphabetically:
+const numbers = [2, 4, 6 , 17, 9, 13];
+const persons = ["Emil", "Tobias", "Linus"];
+const sortedpersons = persons.sort();
+// console.log(sortedpersons);
+// ******** Ascending order
+// const numbers_asc = numbers.sort();
+// const numbers_asc = numbers.sort( function (a ,b) {return a - b });
+// console.log(numbers_asc);
+//************* */ Descending order
+const numbers_dsc = numbers.sort( function (a ,b) {return b - a });
+console.log(numbers_dsc);
+
+// copy of numbers array
+// const numbers_asc = [...numbers].sort( function (a ,b) {return a - b });
+// const numbers_dsc = [...numbers].sort( function (a ,b) {return b - a });
+
 // const numbers = [2, 4, 6 , 7, 9];
 
 // console.log(numbers);
