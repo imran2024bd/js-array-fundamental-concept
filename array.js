@@ -1,4 +1,63 @@
+// 19.5_1 Array Traversal Using For And While Loop
+const friends = ["Emil", "Tobias", "Linus"];
+
+// for(const friend of friends){
+//     console.log(friend);
+// }
+
+// for (let i = 0; i < friends.length; i++) {
+//     // const element = array[i];
+//     console.log(i);
+//     // console.log(friends[i]);
+    
+// }
+
+// const numbers = [2, 4, 6 , 7, 9];
+
+// for (let i = 0; i <numbers.length; i++) {
+   
+//     console.log(numbers[i]);
+// }
+
+// Using  While Loop
+// let i = 0;
+// while (i < friends.length) {
+//     console.log(friends[i]);
+//     i++;
+// }
+
+// let n = 0;
+// while (n< numbers.length) {
+//     console.log(numbers[n]);
+//     n++;
+// }
+
+// *******************************19.5_2 Reversing An Array With/Without Reverse Method
+// Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
 const numbers = [2, 4, 6 , 7, 9];
+// console.log(numbers);
+// numbers.reverse();
+// console.log(numbers);
+
+// reverse Using  for of Loop
+// const rev_numbers = [];
+// for ( const num of numbers ){
+//     console.log(num);
+//     // rev_numbers.push();
+//     rev_numbers.unshift(num);
+// }
+// console.log(rev_numbers);
+
+// reverse Using  for Loop
+const reversed_numbers = [];
+for (let i = 0; i < numbers.length; i++) {
+    let num = numbers[i];
+    reversed_numbers.unshift(num);
+    //  console.log(reversed_numbers);   
+}
+console.log(reversed_numbers);
+
+// const numbers = [2, 4, 6 , 7, 9];
 
 // console.log(numbers);
 
@@ -66,7 +125,7 @@ const numbers = [2, 4, 6 , 7, 9];
 
 // ******************** Array join() ______The join() method also joins all array elements into a string.  but in addition you can specify the separator:
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.join(' * '));
 // The pop() method removes the last element from an array:
 // console.log(fruits.pop());
@@ -88,7 +147,7 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits);
 
 // The concat() method creates a new array by merging (concatenating) existing arrays:
-const myGirls = ["Cecilie", "Lone"];
-const myBoys = ["Emil", "Tobias", "Linus"];
-let persons = myBoys.concat(myGirls);
-console.log(persons);
+// const myGirls = ["Cecilie", "Lone"];
+// const myBoys = ["Emil", "Tobias", "Linus"];
+// let persons = myBoys.concat(myGirls);
+// console.log(persons);
