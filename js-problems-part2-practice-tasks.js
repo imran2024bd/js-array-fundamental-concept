@@ -29,28 +29,55 @@ const persons = ['rakib', 'nokib', 'sakib', 'akib', 'Pakib', 'anis', 'Anis'];
 //     mobile = 20000 tk
 // Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
 
-const laptop = 35000;
-const tablet = 15000;
-const mobile = 20000;
-const calculateElectronicsBudget = laptop + tablet + mobile;
-// const calculateElectronicsBudget = laptop + (tablet *2) + mobile;    // if it counting  2  tablet
-console.log(calculateElectronicsBudget);
+// const laptop = 35000;
+// const tablet = 15000;
+// const mobile = 20000;
+// const calculateElectronicsBudget = laptop + tablet + mobile;
+// // const calculateElectronicsBudget = laptop + (tablet *2) + mobile;    // if it counting  2  tablet
+// console.log(calculateElectronicsBudget);
 
-
+// *******************************************************************************************************
 // Task-4:
-// You are given an array of phone objects, each containing information about the model, brand, and price. Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
+// You are given an array of phone objects, each containing information about the model, brand, and price. 
+//Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
 
 // Input
 
 
-//     const phones = [
-//         { model: "PhoneA", brand: "Iphone", price: 95000 },
-//         { model: "PhoneB", brand: "Samsung", price: 40000 },
-//         { model: "PhoneC", brand: "Oppo", price: 26000 },
-//         { model: "PhoneD", brand: "Nokia", price: 35000 },
-//         { model: "PhoneE", brand: "Iphone", price: 105000 },
-//         { model: "PhoneF", brand: "HTC", price: 48000 },
-//     ];
+    const phones = [
+        { model: "PhoneA", brand: "Iphone", price: 95000 },
+        { model: "PhoneB", brand: "Samsung", price: 40000 },
+        { model: "PhoneC", brand: "Oppo", price: 26000 },
+        { model: "PhoneD", brand: "Nokia", price: 35000 },
+        { model: "PhoneE", brand: "Iphone", price: 105000 },
+        { model: "PhoneF", brand: "HTC", price: 48000 },
+    ];
+
+    // output
+    // 01. At first we define phones an array . It has 6 ( phones.length) values in a phone array i,e: it has a 5 index . 
+    // 02.  In a phones array  { model: "PhoneA", brand: "Iphone", price: 95000 } its a object . then we find any values of object properties.
+    // 03. const person = {firstName:"John", lastName:"Doe", age:46};
+    // 04. console.log(person.firstName);
+    // 05 .Firstly we calculate PhoneA = { model: "PhoneA", brand: "Iphone", price: 95000 } its 01 position and its has 0 index  by this way and rest of others.
+// const PhoneA = phones[0];
+// console.log(PhoneA);
+// const PhoneA_price =PhoneA.price;
+// console.log(PhoneA_price);
+
+const totalphonesprice = phones[0].price + phones[1].price + phones[2].price + phones[3].price + phones[4].price + phones[5].price ;
+console.log(totalphonesprice);
+const totalphones = phones.length
+console.log(totalphones);
+const findAveragePhonePrice = totalphonesprice / totalphones;
+console.log(parseInt (findAveragePhonePrice));
+
+
+
+
+
+
+
+
 // Task -5: (Hard)
 // For each employee their current salary is calculated by multiplying yearly increment with experience then adding the result to the starting salary. Now calculate is the total salary has to be provided by the company in a month.
 

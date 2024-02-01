@@ -101,24 +101,24 @@
 // Use the concat method to combine the two arrays into a new array.
 // Print both the original arrays and the combi
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-const number = [10, 20, 30, 40, 50, 55];
-const new_array = fruits.concat(number);
-console.log(fruits);
-console.log(number);
-console.log(new_array);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const number = [10, 20, 30, 40, 50, 55];
+// const new_array = fruits.concat(number);
+// console.log(fruits);
+// console.log(number);
+// console.log(new_array);
 
 // ------------------------------------------------------------
 
 // Task-1
 // Take four parameters. Multiply the four numbers and then return the result
 
-// var num1 = 2;
-// var num2 = 3;
-// const num3 = 4;
-// const num4 = 5;
-// const multi = num1 * num2 * num3 * num4 ;
-// console.log(multi);
+var num1 = 2;
+var num2 = 3;
+const num3 = 4;
+const num4 = 5;
+const multi = num1 * num2 * num3 * num4 ;
+console.log(multi);
 
 // console.log(num1 * num2 * num3 * num4 );
 // const num3 = 4;
@@ -311,8 +311,8 @@ console.log(new_array);
 // Task-5:
 // Capitalize Every first Letter of each word in a String
 // Converts all the alphabetic characters in a string to uppercase.
-var bangladesh = 'i love my country bangladesh'
-console.log(bangladesh.toUpperCase());
-console.log(bangladesh.toLocaleUpperCase());
-var motherland = 'I LOVE MY COUNTRY BANGLADESH';
-console.log(motherland.toLowerCase());
+// var bangladesh = 'i love my country bangladesh'
+// console.log(bangladesh.toUpperCase());
+// console.log(bangladesh.toLocaleUpperCase());
+// var motherland = 'I LOVE MY COUNTRY BANGLADESH';
+// console.log(motherland.toLowerCase());
