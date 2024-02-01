@@ -1,4 +1,5 @@
 const numbers = [2, 4, 6 , 7, 9];
+
 // console.log(numbers);
 
 // console.log(numbers[2]);
@@ -52,13 +53,42 @@ const numbers = [2, 4, 6 , 7, 9];
 // console.log(fruits);
 
 // ***********************create a new array using built-in array constructor new Array()
-const points = new Array(40, 100, 1, 5, 25, 10);
+// const points = new Array(40, 100, 1, 5, 25, 10);
 // console.log(points);
 
 
 // ************************ to Recognize an Array********************************
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(typeof(fruits));
 
 // **********defined a new method Array.isArray():
-console.log(Array.isArray(fruits));
+// console.log(Array.isArray(fruits));
+
+// ******************** Array join() ______The join() method also joins all array elements into a string.  but in addition you can specify the separator:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.join(' * '));
+// The pop() method removes the last element from an array:
+// console.log(fruits.pop());
+// The push() method adds a new element to an array (at the end):
+// fruits.push('jackfruit');
+// console.log(fruits);
+
+// The shift() method removes the first array element and "shifts" all other elements to a lower index.
+// fruits.shift();
+// console.log(fruits);
+
+// The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+// fruits.unshift('papaya');
+// console.log(fruits);
+
+
+// Using delete() leaves undefined holes in the array.
+// delete fruits[0];
+// console.log(fruits);
+
+// The concat() method creates a new array by merging (concatenating) existing arrays:
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+let persons = myBoys.concat(myGirls);
+console.log(persons);
